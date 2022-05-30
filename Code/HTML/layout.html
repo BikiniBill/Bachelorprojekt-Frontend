@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- darstelungsbefehl -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Seite</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--<meta name="description" content="Einführung in HTML für Anfänger">     das ist kleine Beschreibung für Suchmaschienen  -->
+    <link rel="stylesheet" href="https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/Users/abdulhaial-mohamedzein/Bachelorprojekt-Frontend/Code/CSS/layout_style.css"> <!-- CSS-datei einbinden -->
+    <title>Layout Seite</title> <!-- Seitentitel -->
+
 </head>
 <body>
+    <main>
+        <header>
+            <a href="#" class="logo"><img title="User Bild" 
+                alt="Hochschule für Angewandte Wissenschaften Hamburg" 
+                src="/Users/abdulhaial-mohamedzein/Bachelorprojekt-Frontend/Images/stock-vector-man-icon-vector-1040084344.gif" width="191" height="70"></a> <!-- pfad von diesem Bild? -->
+            <nav class = "navigation">
+                <a href="#">Button1</a>
+                <a href="#">Button2</a>
+                <a href="#">Button3</a>
+                <a href="#">Button4</a>
+            </nav>
+        </header>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Seite1')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Seite1')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Seite1')">Tokyo</button>
+            <button class="tablinks" onclick="openCity(event, 'Seite1')">Tokyo</button>
+          </div>
+          
+          <div id="Seite1" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="Seite2" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Seite3" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+          <div id="Seite4" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+           
+    </main>
     
 </body>
 </html>
