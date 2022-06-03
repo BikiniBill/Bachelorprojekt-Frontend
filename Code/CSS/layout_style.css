@@ -18,39 +18,115 @@ header{
     padding-left: 90px;
 }
 
-/* Menu Tab*/
-.tab{
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 20%;
-    height: 100%;
+/* Button */
+#Button{
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-size: 1.3em;
+
 }
 
+#Button:hover {
+    color: white;
+}
+
+.section_main{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
 /* Menu Tab Button */
+.tab{
+    padding-top: 75px;
+    border: 1px solid rgb(44, 82, 148);
+    background-color: #d7d7d7;
+    width: 250px;
+    height: 850px;
+}
+
+/* Style the buttons inside the tab */
 .tab button {
     display: block;
     background-color: inherit;
     color: black;
+    margin-top: 5px;
     padding: 22px 16px;
     width: 100%;
     border: none;
     outline: none;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.01s;
+    font-size: 17px;
+    font-size: 1.3em;
+
 }
-  
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #003ca0;
+    border: 0.8px solid #003ca0;
+    border-radius: 13px ;
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    
+    background-color: #ccc;
+}
 
 /* Menu Bar Button */
 .menuBar{
     width: 20%;
     color: rgb(143, 142, 142);
     font-size: 20px;
-
 }
 
 /* Menu Bar Button effekt */
 .active, .accordion:hover {
     background-color: rgb(91, 82, 82);
-  }
+}
+
+.tab1{
+    margin-top: 100px;
+}
+
+/********************************************************/
+/* ZEIN: layout 1 */
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.content{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.card{
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 35%);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px; 
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
