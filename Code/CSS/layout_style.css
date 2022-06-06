@@ -22,7 +22,7 @@ header{
 #Button{
     border: none;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
     font-size: 16px;
@@ -32,7 +32,7 @@ header{
 }
 
 #Button:hover {
-    color: white;
+    color: rgb(171, 168, 168);
 }
 
 .section_main{
@@ -72,7 +72,7 @@ header{
 /* Change background color of buttons on hover */
 .tab button:hover {
     color: #003ca0;
-    border: 0.8px solid #003ca0;
+    border: 0.8px solid #ffffff;
     border-radius: 13px ;
     background-color: #ddd;
 }
