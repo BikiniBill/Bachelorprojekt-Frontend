@@ -1,0 +1,149 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #003ca0;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    padding-left: 90px;
+}
+
+/* Button */
+#Button{
+    border: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-size: 1.3em;
+}
+
+#Button:hover {
+    color: rgb(171, 168, 168);
+}
+
+.section_main{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Menu Tab Button */
+.tab{
+    padding-top: 75px;
+    max-width: 250px;
+    min-width: 250px;
+    border: 1px solid rgb(44, 82, 148);
+    background-color: #d7d7d7;
+    width: 250px;
+    height: 850px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    margin-top: 15px;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.01s;
+    font-size: 17px;
+    font-size: 1.3em;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #003ca0;
+    border: 0.8px solid #ffffff;
+    border-radius: 13px ;
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Menu Bar Button */
+.menuBar{
+    width: 20%;
+    color: rgb(143, 142, 142);
+    font-size: 20px;
+}
+
+/* Menu Bar Button effekt */
+.active, .accordion:hover {
+    background-color: rgb(91, 82, 82);
+}
+
+.kurse{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+/********************************************************/
+/* ZEIN: layout 1 */
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 800;
+    padding: 10px 5px;
+}
+
+.unterTitel{
+    display: flex;
+    justify-content: left;
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    
+}
+
+.card{
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 35%);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 50px 20px 0px; 
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+}

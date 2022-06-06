@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"> <!-- darstelungsbefehl -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--<meta name="description" content="Einführung in HTML für Anfänger">     das ist kleine Beschreibung für Suchmaschienen  -->
+    <link rel="stylesheet" href="https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../Code/CSS/login.css"> <!-- CSS-datei einbinden -->
+    <title>Login Seite</title> <!-- Seitentitel -->
+    <!-- <input type='text' name='Name' placeholder='Name' required> -->
+    <!-- <input type='password' name='password' placeholder=' min. 8 Zeichen' minlength='8' required> -->
+    
+</head>
+<body>
+    <main>
+        <header>
+            <a href="https://www.haw-hamburg.de" class="logo"><img title="Hochschule für Angewandte Wissenschaften Hamburg" 
+                alt="Hochschule für Angewandte Wissenschaften Hamburg" 
+                src="/Users/abdulhaial-mohamedzein/Bachelorprojekt-Frontend/Images/HAW_Marke_weiss_RGB.svg" width="191" height="70"></a> <!-- pfad von diesem Bild? -->
+            <nav class = "navigation">
+                <a href="https://www.haw-hamburg.de">Hochschule</a>
+            </nav>
+        </header>
+    <!-- Inhaltsbereich -->
+    <section class="sel1">
+        <div class="main1">
+
+                <div class='text'>
+                    <h1 class='h1'>Bitte anmelden</h1>
+                </div>
+                
+                <div class='name'>
+                    <form action ='?page=contacts' methode ='POST'>
+                        <label class='lebel1'><b>Name</b></label>
+                        <td>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <!-- <input type='text' id='name' placeholder='Name' required class='input_text'> --> 
+                        </td>
+                    </form>
+                </div>
+
+                <div class='id'>  
+                    <form action ='?page=contacts' methode ='POST'> 
+                        <label class='lebel2'><b>Password: </b></label>
+                        <input type='password' id='password' placeholder=' min. 8 Zeichen' minlength='8' required>
+                    </form>
+                </div>
+
+                <div class='button'>
+                    <form action ='?page=contacts' methode ='POST'>
+                        <button class="button button4">anmelden</button>
+                        <a href='#' class='classe'> password vergessen? </a>
+                    </form>
+                </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
