@@ -4,15 +4,269 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap einbinden-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/Modifikationen.css">
+
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
+<div class="container-fluid">
+    <div class="row height-mod" >
+
+        <!--header-->
+        <div class="col-lg-12 no-padding">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header top-padding-9 height-mod">
+                        <img src="C:\Users\L_Koh\Desktop\Bachelorprojekt\BachelorProjekt\Bachelorprojekt-Frontend\Images\Linus_PB.jpeg" class="img-rounded" height="60px">
+                    </div>
+                    <ul class="nav navbar-nav top-padding-9 height-mod">
+                        <li class="navbar-text">Prof. Kohlmann</li>
+                        <li class="navbar-text">GPP1</li>
+                        <li class="navbar-text">/2</li>
+                        <li class="navbar-text">Versuch 1</li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right top-padding-9 height-mod">
+                        <li><a href="#"><span class="glyphicon glyphicon-print"></span> to PDF</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <div class="row">
+        <!--sidebar-->
+        <div class="col-lg-2">
+            <ul class="nav nav-pills nav-stacked" role="tablist">
+                <li><a href="#">Allgemeine Übersicht</a></li>
+                <li class="active"><a href="#">Versuch 1</a></li>
+                <li><a href="#">Versuch 2</a></li>
+                <li><a href="#">Versuch 3</a></li>
+                <li><a href="#">Versuch 4</a></li>
+                <li><a href="#">Versuch 5</a></li>
+                <li><a href="#">Versuch 6</a></li>
+                <li><a href="#">Versuch 7</a></li>
+            </ul>
+        </div>
+
+        <!--mainContent-->
+        <div class="col-lg-10">
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Studenten Name</th>
+                        <th>Arbeitsgruppe</th>
+                        <th>Martrikulationsnummer</th>
+                        <th>Anwesenheit</th>
+                        <th>Bestanden</th>
+                        <th>Kommentar</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Linus Kohlmann</td>
+                        <td>1</td>
+                        <td>2505583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Peter Müller</td>
+                        <td>1</td>
+                        <td>5433786</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Max Mustermann</td>
+                        <td>1</td>
+                        <td>2505543</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Abdulhai Zein</td>
+                        <td>2</td>
+                        <td>1234678</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Dennis Schönhauer</td>
+                        <td>2</td>
+                        <td>2542583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Frida Pfannenkuchen</td>
+                        <td>2</td>
+                        <td>2125583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mario Bart</td>
+                        <td>3</td>
+                        <td>2123583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Peter Lustig</td>
+                        <td>3</td>
+                        <td>3215583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Walter Frosch</td>
+                        <td>3</td>
+                        <td>3855583</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                        <td>
+                            <select class="form-controll" id="sell">
+                                <option>-----</option>
+                                <option>bestanden</option>
+                                <option>nicht bestanden</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <textarea class="form-controll" rows="2" id="comment"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
 </div>
 
 </body>

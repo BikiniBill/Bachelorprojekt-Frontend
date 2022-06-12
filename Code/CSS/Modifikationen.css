@@ -1,0 +1,33 @@
+/* Modifikationen an Bootstrap Klassen*/
+
+.navbar{
+  font-size: x-large;
+  background-color: #003ca0;
+}
+
+.nav-pills{
+  font-size: large;
+}
+
+.row{
+  padding-top: 20px;
+}
+
+.navbar-header img{
+  color: white;
+}
+.nav.navbar-nav li{
+  color: white;
+}
+
+.nav.navbar-nav li a{
+  color: white;
+}
+
+
+/* ------------------------------------------------------ */
+/*Modifikationen anderer Klassen*/
+
+th{
+  font-size: large;
+}
