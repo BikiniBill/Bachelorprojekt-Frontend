@@ -12,3 +12,9 @@
   .top-padding-9 {
     padding-top: 9px;
   }
+
+  .bottom-footer{
+    padding-bottom: 30px;
+    padding-left: 15px;
+    background-color: white;
+  }

@@ -23,11 +23,12 @@ function addStudent() {
   cell7.innerHTML = '<div class="form-group"><textarea class="form-controll" rows="2" id="comment"></textarea></div>';
 
 
-/*   clear on submit */
+  /*  clear on submit */
   document.getElementById("Vorname").value="";
   document.getElementById("Nachname").value="";
   document.getElementById("Arbeitsgruppe").value="";
   document.getElementById("Martrikulationsnummer").value="";
+
 }
 
 function deleteStudent() {

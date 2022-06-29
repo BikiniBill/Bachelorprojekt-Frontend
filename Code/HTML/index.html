@@ -19,7 +19,7 @@
 <script src="../JavaScript/sidebarFunction.js"></script>
 
 <div class="container-fluid">
-    <div class="row height-mod" >
+    <div class="row height-mod">
 
         <!--header-->
         <div class="col-lg-12 no-padding">
@@ -46,7 +46,7 @@
     <div class="row">
         <!--sidebar-->
         <div class="col-lg-2">
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-pills nav-stacked" style="position: fixed;">
                 <li><a data-toggle="pill" href="#1">Allgemeine Übersicht</a></li>
                 <li><a data-toggle="pill" href="#2">Versuch 1</a></li>
                 <li><a data-toggle="pill" href="#3">Versuch 2</a></li>
@@ -58,7 +58,7 @@
         </div>
 
         <!--mainContent-->
-        <div class="col-lg-10">
+        <div class="col-lg-10" style="padding-bottom: 50px;">
             <table class="table table-hover table-striped" id="studentTable">
                 <thead>
                     <tr>
@@ -73,42 +73,45 @@
                 </thead>
 
                 <tbody>
-                    
-
+                    <tr>
+                        
+                    </tr>
                 </tbody>
                 
             </table>
-
-
-            <form>
-                <div class="form-row">
-                  <div class="col-lg-3">
-                    <input type="text" class="form-control" placeholder="First name" id="Vorname">
-                  </div>
-                  <div class="col-lg-3">
-                    <input type="text" class="form-control" placeholder="Last name" id="Nachname">
-                  </div>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" placeholder="Arbeitsgruppe" id="Arbeitsgruppe">
-                  </div>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" placeholder="Martrikulationsnummer" id="Martrikulationsnummer">
-                  </div>
-                  <div class="col-lg-2">
-                    <button type="submit" class="btn btn-primary mb-2" onclick="addStudent()">Submit</button>
-                  </div>
-
-
-                </div>
-              </form>
-
-
-
-
-<!--             <button onclick="addStudent()">add Student</button>
-            <button onclick="deleteStudent()">delete Student</button> -->
-
         </div>
+        
+        <!-- bot footer     -->
+        <div class="form-row navbar-fixed-bottom bottom-footer">
+            <form>  
+                <div class="row">
+                    <div class="col-lg-2">
+                        <!-- spaceholder -->
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" placeholder="First name" id="Vorname">
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" placeholder="Last name" id="Nachname">
+                    </div>         
+
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" placeholder="Arbeitsgruppe" id="Arbeitsgruppe">
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" placeholder="Martrikulationsnummer" id="Martrikulationsnummer">
+                    </div>
+                    <div class="col-lg-1">
+                        <button type="button" class="btn btn-primary mb-2" onclick="addStudent()">Submit</button>
+                    </div>
+                    <div class="col-lg-1">
+                        <!-- spaceholder -->
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
     </div>
 
 
